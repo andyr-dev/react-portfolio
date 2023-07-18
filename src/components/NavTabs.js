@@ -4,12 +4,8 @@ import "./pages/ContactMe";
 import "./pages/Portfolio";
 import "./pages/Resume";
 
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    // <ul className="nav nav-tabs">
-    //   <li className="nav-item">
     <nav>
       <a
         href="#AboutMe"
@@ -17,10 +13,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
         className={currentPage === "AboutMe" ? "nav-link active" : "nav-link"}
       >
-        About Me
+        About
       </a>
-      {/* </li> */}
-      {/* // <li className="nav-item"> */}
       <a
         href="#Portfolio"
         onClick={() => handlePageChange("Portfolio")}
@@ -29,18 +23,16 @@ function NavTabs({ currentPage, handlePageChange }) {
       >
         Portfolio
       </a>
-      {/* // </li>
-      // <li className="nav-item"> */}
+
       <a
-        href="#ContactMe"
+        href="#Contact"
         onClick={() => handlePageChange("ContactMe")}
         // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
         className={currentPage === "ContactMe" ? "nav-link active" : "nav-link"}
       >
-        Contact Me
+        Contact
       </a>
-      {/* // </li>
-      // <li className="nav-item"> */}
+
       <a
         href="#Resume"
         onClick={() => handlePageChange("Resume")}
@@ -50,8 +42,6 @@ function NavTabs({ currentPage, handlePageChange }) {
       >
         Resume
       </a>
-      {/* //   </li>
-    // </ul> */}
     </nav>
   );
 }

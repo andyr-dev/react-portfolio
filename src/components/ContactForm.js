@@ -43,7 +43,7 @@ function Form() {
 
   return (
     <section id="contact">
-      <h1 class="section-header">Contact</h1>
+      <h1 class="section-header">Need to get in Contact?</h1>
 
       <div class="contact-wrapper">
         <form id="contact-form" class="form-horizontal" role="form">
@@ -112,7 +112,7 @@ function Form() {
             <li class="list-item">
               <i class="fa fa-envelope fa-2x">
                 <span class="contact-text email">
-                <FontAwesomeIcon icon={faEnvelope} />
+                  <FontAwesomeIcon icon={faEnvelope} />
                   <a href="mailto: Andy3942@gmail.com" title="Send me an email">
                     Andy3942@gmail.com
                   </a>

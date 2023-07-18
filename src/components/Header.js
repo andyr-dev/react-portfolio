@@ -1,6 +1,4 @@
 import React from "react";
-import NavTabs from './NavTabs';
-import PageContainer from "./PageContainer";
 
 export default function Header() {
   return (

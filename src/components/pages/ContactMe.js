@@ -1,8 +1,6 @@
 import React from "react";
-import Form from "../ContactForm"
+import Form from "../ContactForm";
 
 export default function ContactMe() {
-  return (
-<Form />
-  );
+  return <Form />;
 }
