@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <section className="AboutMe" id="AboutMe">
+    <section className="aboutMe">
       {" "}
       <img className="avatar" src="./images/avatar.png" alt="Avatar" />
       <p className="aboutMeText">

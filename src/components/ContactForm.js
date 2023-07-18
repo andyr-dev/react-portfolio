@@ -42,8 +42,8 @@ function Form() {
   };
 
   return (
-    <section id="contact">
-      <h1 class="section-header">Need to get in Contact?</h1>
+    <section className="contact">
+      <h1 class="section-header">Need to get in contact?</h1>
 
       <div class="contact-wrapper">
         <form id="contact-form" class="form-horizontal" role="form">

@@ -3,7 +3,7 @@ import React from "react";
 export default function Portfolio() {
   return (
     <>
-      <section id="projects">
+      <section id="projectsContainer">
         <div>
           <div>
             <a href="https://jate-texteditor1-5f61b91974cb.herokuapp.com/">

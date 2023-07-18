@@ -33,7 +33,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/your-linkedin-profile"
+            href="https://stackoverflow.com/users/22248820/andyr-dev"
             target="_blank"
             className="contact-icon"
             rel="noopener noreferrer"
