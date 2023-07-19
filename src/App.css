@@ -14,8 +14,6 @@
   --lightmode-link-color: #1b1b1b;
 }
 
-
-
 #light {
   background-color: var(--lightmode-bg-color);
   color: var(--lightmode-text-color);
@@ -30,8 +28,6 @@
 #dark .switch label {
   color: white;
 }
-
-
 
 header {
   display: flex;
@@ -55,7 +51,6 @@ nav {
   text-decoration: none;
 }
 
-
 #dark a:after {
   bottom: 0;
   content: "";
@@ -77,7 +72,6 @@ nav {
   width: 0;
 }
 
-
 #dark nav a:hover:after {
   width: 100%;
   left: 0;
@@ -86,7 +80,6 @@ nav {
   width: 100%;
   left: 0;
 }
-
 
 .aboutMe {
   display: flex;
@@ -162,14 +155,12 @@ nav {
   transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
 }
 
-
 #dark .social-media-list li a {
   color: black;
 }
 #light .social-media-list li a {
   color: var(--main-text-color);
 }
-
 
 #dark .social-media-list li {
   position: relative;
@@ -198,14 +189,12 @@ nav {
   transition: all 0.2s ease-in-out;
 }
 
-
 #dark .social-media-list li:hover {
   background-color: var(--main-bg-color);
 }
 #light .social-media-list li:hover {
   background-color: var(--link-color);
 }
-
 
 #dark .social-media-list li:hover a {
   color: white;
@@ -229,7 +218,6 @@ nav {
   padding: 0 25px 25px 0;
 }
 
-
 #dark .repoLinks:after {
   bottom: 0;
   content: "";
@@ -251,7 +239,6 @@ nav {
   width: 0;
 }
 
-
 #dark .repoLinks:hover:after {
   width: 100%;
   left: 0;
@@ -268,7 +255,6 @@ nav {
 #grayscale:hover {
   filter: grayscale(0);
 }
-
 
 @media only screen and (max-width: 600px) {
   h1 {
@@ -310,9 +296,128 @@ nav {
   align-items: end;
   margin: 10px;
 }
+#dark .pdf {
+  border-radius: 30px;
+  color: var(--main-bg-color);
+  background-color: var(--main-text-color);
+}
 
-/* .switch label {
+#light .pdf {
+  border-radius: 30px;
+  color: var(--lightmode-bg-color);
+  background-color: var(--lightmode-text-color);
+}
 
-  
-  
-} */
+#dark .header {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+#dark .contact-info {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  padding: 25px 25px 25px 25px;
+  justify-content: center;
+}
+#dark .summary {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  padding: 25px 25px 25px 25px;
+}
+#dark .section-title {
+  padding: 25px 25px 25px 25px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+
+  display: flex;
+  justify-content: center;
+}
+#dark .experience {
+  font-size: 24px;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  padding: 25px 25px 25px 25px;
+}
+#dark .education {
+  font-size: 24px;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  padding: 25px 25px 25px 25px;
+}
+#dark .certifications {
+  font-size: 24px;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  padding: 25px 25px 25px 25px;
+}
+
+#light .header {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--lightmode-text-color);
+  background-color: var(--lightmode-bg-color);
+}
+#light .contact-info {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--lightmode-text-color);
+  background-color: var(--lightmode-bg-color);
+  padding: 25px 25px 25px 25px;
+  justify-content: center;
+}
+#light .summary {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--lightmode-text-color);
+  background-color: var(--lightmode-bg-color);
+  padding: 25px 25px 25px 25px;
+}
+#light .section-title {
+  padding: 25px 25px 25px 25px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--lightmode-text-color);
+  background-color: var(--lightmode-bg-color);
+
+  display: flex;
+  justify-content: center;
+}
+#light .experience {
+  font-size: 24px;
+  color: var(--lightmode-text-color);
+  background-color: var(--lightmode-bg-color);
+  padding: 25px 25px 25px 25px;
+}
+#light .education {
+  font-size: 24px;
+  color: var(--lightmode-text-color);
+  background-color: var(--lightmode-bg-color);
+  padding: 25px 25px 25px 25px;
+}
+#light .certifications {
+  font-size: 24px;
+  color: var(--lightmode-text-color);
+  background-color: var(--lightmode-bg-color);
+  padding: 25px 25px 25px 25px;
+}
+
+.switch {
+  padding: 15px;
+}

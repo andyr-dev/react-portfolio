@@ -57,7 +57,7 @@ function Form() {
                 name="name"
                 value={name}
                 onChange={handleInputChange}
-                required
+                required="true"
               />
             </div>
           </div>
@@ -72,7 +72,7 @@ function Form() {
                 name="email"
                 value={email}
                 onChange={handleInputChange}
-                required
+                required="true"
               />
             </div>
           </div>
@@ -83,7 +83,7 @@ function Form() {
             placeholder="Message"
             name={message}
             onChange={handleInputChange}
-            required
+            required="true"
           ></textarea>
 
           <button
