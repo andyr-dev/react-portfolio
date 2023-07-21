@@ -19,32 +19,32 @@ export default function Resume() {
       <body>
         {" "}
         <div>
-          <div class="header">Andres Rodriguez</div>
+          <div className="header">Andres Rodriguez</div>
 
-          <div class="contact-info">
+          <div className="contact-info">
             Orlando, FL | Phone: (407) 461-7625 | Email: Andy3942@gmail.com
           </div>
           <button className="pdf" onClick={onButtonClick}>
             Click here for a PDF version
           </button>
         </div>
-        <div class="summary">Summary</div>
-        <div class="experience">
+        <div className="summary">Summary</div>
+        <div className="experience">
           Full Stack Web Developer with a background in IT support and life-long
           dedication to learning. Effective at combining creativity and problem
           solving to develop user-friendly applications. Known among staff for
           strong wit and attention to detail no matter the complexity of the
           project.
         </div>
-        <div class="section-title">Technical Skills</div>
-        <div class="experience">
+        <div className="section-title">Technical Skills</div>
+        <div className="experience">
           Languages: HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB,
           SQL
           <br />
           Tools: AWS (Amazon Web Services)
         </div>
-        <div class="section-title">Relevant Experience</div>
-        <div class="experience">
+        <div className="section-title">Relevant Experience</div>
+        <div className="experience">
           <strong>Tier 2 Help Desk Technician</strong>
           <br />
           DEX Imaging - February 2020 – Present
@@ -115,21 +115,21 @@ export default function Resume() {
             </li>
           </ul>
         </div>
-        <div class="section-title">Education</div>
-        <div class="education">
+        <div className="section-title">Education</div>
+        <div className="education">
           <strong>Full-Stack Web Development Certificate</strong>
           <br />
           University of Central Florida
           <br />
         </div>
-        <div class="education">
+        <div className="education">
           <strong>Associate of Arts in Computer Science</strong>
           <br />
           Miami Dade College
           <br />
         </div>
-        <div class="section-title">Certifications</div>
-        <div class="certifications">
+        <div className="section-title">Certifications</div>
+        <div className="certifications">
           • AWS Cloud Practitioner (May 2020 - May 2024)
           <br />
           • AWS Solutions Architect – Associate (May 2020 - May 2024)
