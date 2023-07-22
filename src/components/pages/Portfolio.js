@@ -10,7 +10,7 @@ export default function Portfolio() {
               <img
                 id="grayscale"
                 className="project"
-                src="./images/jate.png"
+                src="images/jate.png"
                 alt="JATE"
               />
             </a>
