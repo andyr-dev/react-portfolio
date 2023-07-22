@@ -1,0 +1,245 @@
+* {
+  font-family: "League Spartan";
+}
+
+:root {
+  --main-bg-color: #1b1b1b;
+  --main-text-color: #ffffff;
+  --accent-color: #007bff;
+  --link-color: #ffffff;
+  --lightmode-bg-color: #ffffff;
+  --lightmode-text-color: #000000;
+  --lightmode-link-color: #1b1b1b;
+}
+
+#light {
+  background-color: var(--lightmode-bg-color);
+  color: var(--lightmode-text-color);
+}
+#dark {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+#dark body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+  padding-bottom: 100px;
+}
+#light body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--lightmode-bg-color);
+  padding-bottom: 100px;
+}
+
+#dark #contact {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+  padding-bottom: 100px;
+}
+#light #contact {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--lightmode-bg-color);
+  padding-bottom: 100px;
+}
+
+#dark .section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 25px;
+  color: var(--main-text-color);
+  letter-spacing: 6px;
+}
+#light .section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 25px;
+  color: var(--lightmode-text-color);
+  letter-spacing: 6px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+
+.form-horizontal {
+  max-width: 400px;
+
+  font-weight: 400;
+}
+
+#dark .form-control::placeholder {
+  color: var(--main-text-color);
+}
+#light .form-control::placeholder {
+  color: var(--lightmode-text-color);
+}
+
+#dark .form-control,
+textarea {
+  max-width: 400px;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  letter-spacing: 1px;
+}
+
+#light .form-control,
+textarea {
+  max-width: 400px;
+  background-color: var(--lightmode-bg-color);
+  color: var(--lightmode-text-color);
+  letter-spacing: 1px;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px "Lato", sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+.direct-contact-container {
+  max-width: 400px;
+}
+
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+#dark .list-item {
+  line-height: 4;
+  color: var(--lightmode-bg-color);
+}
+#light .list-item {
+  line-height: 4;
+  color: var(--main-bg-color);
+}
+
+#dark .contact-text {
+  font: 300 18px "League Spartan", sans-serif;
+  letter-spacing: 1.9px;
+  color: var(--main-text-color);
+}
+#light .contact-text {
+  font: 300 18px "League Spartan", sans-serif;
+  letter-spacing: 1.9px;
+  color: var(--lightmode-text-color);
+}
+
+.place {
+  margin-left: 62px;
+  letter-spacing: 2px;
+}
+
+.email {
+  letter-spacing: 2px;
+}
+
+#dark .contact-text a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  transition-duration: 0.2s;
+  padding-left: 25px;
+}
+#light .contact-text a {
+  color: var(--lightmode-text-color);
+  text-decoration: none;
+  transition-duration: 0.2s;
+  padding-left: 25px;
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container,
+  .form-horizontal {
+    margin: 0 auto;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .direct-contact-container,
+  .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+  .form-control,
+  textarea {
+    margin: 0 auto;
+  }
+
+  .name,
+  .email,
+  textarea {
+    width: 280px;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
