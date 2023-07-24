@@ -238,8 +238,17 @@ textarea {
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 400px) {
   .send-button {
-    width: 99%;
+    width: 350px;
+  }
+  .contact-wrapper {
+    font-size: 14px;
+  }
+  .form-control {
+    width: 250px;
+  }
+  .alt-send-button {
+    width: 325px;
   }
 }

@@ -256,7 +256,7 @@ nav {
   filter: grayscale(0);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   h1 {
     font-size: 24px;
   }
@@ -269,23 +269,31 @@ nav {
     font-size: 14px;
   }
 
-  .AboutMe p {
+  .aboutMeText {
+    inline-size: 300px;
+    font-size: 14px;
     margin: 15px;
   }
 
-  .AboutMe img {
+  .aboutMe img {
     margin-left: 10%;
     margin-right: 10%;
   }
 
-  #projects h2 {
+  .project {
+    font-size: 14px;
+    inline-size: 300px;
     width: 300px;
     height: 250px;
-    font-size: 20px;
   }
 
   .repoLinks {
     padding-right: 0;
+    
+  }
+  .resume { 
+    font-size: 14px;
+
   }
 }
 

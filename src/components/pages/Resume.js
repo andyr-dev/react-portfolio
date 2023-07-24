@@ -16,7 +16,7 @@ export default function Resume() {
   };
   return (
     <>
-      <body>
+      <body className = "resume">
         {" "}
         <div>
           <div className="header">Andres Rodriguez</div>
@@ -41,7 +41,7 @@ export default function Resume() {
           Languages: HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB,
           SQL
           <br />
-          Tools: AWS (Amazon Web Services)
+          Tools: AWS (Amazon Web Services), Git, VS Code
         </div>
         <div className="section-title">Relevant Experience</div>
         <div className="experience">
