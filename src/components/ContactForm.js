@@ -7,6 +7,7 @@ import {
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 
+
 function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -33,6 +34,7 @@ function Form() {
       window.alert(`That doesn't seem like a valid email`);
       return;
     }
+
 
     alert(`Thanks ${name}! Your message has been sent!`);
 

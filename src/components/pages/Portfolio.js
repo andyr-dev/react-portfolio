@@ -24,21 +24,22 @@ export default function Portfolio() {
             </a>
           </div>
           <div>
-            <a href="https://jbarberisv.github.io/Beatview/">
+            <a href="https://tee-tracker-f002b4a04af4.herokuapp.com/">
               <img
                 id="grayscale"
                 className="project"
-                src="./images/Maimusic.png"
-                alt="Maimusic"
+                src="./images/Tee Tracker.png"
+                alt="Tee Tracker"
               />
             </a>
 
             <a
               className="repoLinks"
-              href="https://github.com/jbarberisv/Beatview"
+              href="
+              https://github.com/andyr-dev/Tee-Tracker"
             >
               {" "}
-              MaiMusic Repo{" "}
+              Tee Tracker Repo{" "}
             </a>
           </div>
           <div>
