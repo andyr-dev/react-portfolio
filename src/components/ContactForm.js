@@ -14,6 +14,9 @@ function Form() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const form = useRef();
+  const serviceId =  process.env.REACT_APP_SERVICE_ID
+  const templateId = process.env.REACT_APP_TEMPLATE_ID
+  const apiKey = process.env.REACT_APP_API_KEY
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -41,10 +44,10 @@ function Form() {
 
     emailjs
       .sendForm(
-        secrets.REACT_APP_SERVICE_ID,
-        secrets.REACT_APP_TEMPLATE_ID,
+       serviceId,
+        templateId,
         form.current,
-        secrets.REACT_APP_API_KEY
+        apiKey
       )
       .then(
         (result) => {
