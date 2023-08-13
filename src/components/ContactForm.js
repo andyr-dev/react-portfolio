@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { validateEmail } from "../utils/helpers";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,11 +7,13 @@ import {
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 
+import emailjs from "@emailjs/browser";
 
 function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const form = useRef();
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -27,7 +29,7 @@ function Form() {
     }
   };
 
-  const handleFormSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     if (!validateEmail(email)) {
@@ -35,8 +37,23 @@ function Form() {
       return;
     }
 
-
     alert(`Thanks ${name}! Your message has been sent!`);
+
+    emailjs
+      .sendForm(
+        secrets.REACT_APP_SERVICE_ID,
+        secrets.REACT_APP_TEMPLATE_ID,
+        form.current,
+        secrets.REACT_APP_API_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     setName("");
     setMessage("");
@@ -45,78 +62,84 @@ function Form() {
 
   return (
     <section className="contact">
-      <h1 class="section-header">Need to get in contact?</h1>
+      <h1 className="section-header">Need to get in contact?</h1>
 
-      <div class="contact-wrapper">
-        <form id="contact-form" class="form-horizontal" role="form">
-          <div class="form-group">
-            <div class="col-sm-12">
+      <div className="contact-wrapper">
+        <form
+          ref={form}
+          id="contact-form"
+          className="form-horizontal"
+          role="form"
+        >
+          <div className="form-group">
+            <div className="col-sm-12">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="name"
                 placeholder="Name"
                 name="name"
                 value={name}
                 onChange={handleInputChange}
-                required="true"
+                required
               />
             </div>
           </div>
 
-          <div class="form-group">
-            <div class="col-sm-12">
+          <div className="form-group">
+            <div className="col-sm-12">
               <input
                 type="email"
-                class="form-control"
+                className="form-control"
                 id="email"
                 placeholder="Email"
                 name="email"
                 value={email}
                 onChange={handleInputChange}
-                required="true"
+                required
               />
             </div>
           </div>
 
           <textarea
-            class="form-control"
+            className="form-control"
             rows="10"
             placeholder="Message"
-            name={message}
+            name="message"
+            value={message}
             onChange={handleInputChange}
-            required="true"
+            required
           ></textarea>
 
           <button
-            class="btn btn-primary send-button"
+            className="btn btn-primary send-button"
             id="submit"
             type="submit"
             value="Send"
-            onClick={handleFormSubmit}
+            onClick={sendEmail}
           >
-            <div class="alt-send-button">
+            <div className="alt-send-button">
               <FontAwesomeIcon icon={faPaperPlane} />
-              <span class="send-text">Send</span>
+              <span className="send-text">Send</span>
             </div>
           </button>
         </form>
 
-        <div class="direct-contact-container">
-          <ul class="contact-list">
-            <li class="list-item">
-              <i class="fa-map-marker fa-2x">
+        <div className="direct-contact-container">
+          <ul className="contact-list">
+            <li className="list-item">
+              <i className="fa-map-marker fa-2x">
                 <FontAwesomeIcon icon={faLocationDot} />
-                <span class="contact-text place">Orlando, FL</span>
+                <span className="contact-text place">Orlando, FL</span>
               </i>
             </li>
 
-            <li class="list-item">
-              <i class="fa fa-envelope fa-2x">
-                <span class="contact-text email">
+            <li className="list-item">
+              <i className="fa fa-envelope fa-2x">
+                <span className="contact-text email">
                   <FontAwesomeIcon icon={faEnvelope} />
-                  <a href="mailto: Andy3942@gmail.com" title="Send me an email">
-                    Andy3942@gmail.com
+                  <a href="mailto: Me@Andyr.dev" title="Send me an email">
+                    Me@Andyr.dev
                   </a>
                 </span>
               </i>
