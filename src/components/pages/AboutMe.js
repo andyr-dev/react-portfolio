@@ -6,12 +6,9 @@ export default function AboutMe() {
       {" "}
       <img className="avatar" src="./images/avatar.png" alt="Avatar" />
       <p className="aboutMeText">
-        Hey there! I'm Andy, a dedicated full stack developer with a deep love
-        for backend development. I thrive on building robust and efficient
-        server-side architectures that power seamless user experiences. My
-        coding journey is fueled by the excitement of creating impactful web
-        applications that make a difference in people's lives. Let's bring ideas
-        to life through code!
+        My name is Andy Rodriguez and I am a dedicated full stack developer
+        with a strong passion for technology and a commitment to
+        mastering front-end and back-end development.
       </p>
     </section>
   );

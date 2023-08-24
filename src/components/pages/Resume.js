@@ -16,7 +16,7 @@ export default function Resume() {
   };
   return (
     <>
-      <body className = "resume">
+      <body className="resume">
         {" "}
         <div>
           <div className="header">Andres Rodriguez</div>
@@ -38,8 +38,12 @@ export default function Resume() {
         </div>
         <div className="section-title">Technical Skills</div>
         <div className="experience">
-          Languages: HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB,
-          SQL
+          Languages: HTML, CSS, JavaScript
+          <br />
+          Frameworks: React, Node.js, Express.js <br />
+          Databases: MongoDB, SQL
+          <br />
+          APIs: RESTAPI, GraphQL
           <br />
           Tools: AWS (Amazon Web Services), Git, VS Code
         </div>
@@ -51,30 +55,42 @@ export default function Resume() {
           <br />
           <ul>
             <li>
-              Provided remote assistance to customers regarding the function of
-              MFP for various printer manufacturers such as Konica, Kyocera, HP,
-              Canon, SHARP, Toshiba, Lexmark, and Xerox.
+              Delivered expert remote assistance to customers, imparting
+              in-depth operational knowledge of multifunction printers (MFP)
+              across a diverse range of manufacturers including Konica, Kyocera,
+              HP, Canon, SHARP, Toshiba, Lexmark, and Xerox.
             </li>
             <li>
-              Tracked customer requests using the E-auto Ticketing Software.
+              Utilized E-auto Ticketing Software to track and manage customer
+              requests, ensuring efficient and organized handling of each
+              inquiry.
             </li>
             <li>
-              Responded to email messages, web inquiries, and phone calls to
-              assist customers with their requests.
+              Employed a multi-channel approach, promptly addressing customer
+              needs through email, web inquiries, and phone support, offering
+              comprehensive solutions tailored to their requests.
             </li>
             <li>
-              Troubleshot hardware issues and conducted user training on printer
-              functions.
+              Applied problem-solving prowess to diagnose and resolve hardware
+              issues, while also conducting comprehensive user training sessions
+              to empower customers with optimal utilization of printer
+              functionalities.
             </li>
             <li>
-              Configured Windows and Mac OS PCs to scan to folder via SMB and
-              FTP and installed drivers.
+              Proficiently configured Windows and Mac OS PCs, enabling seamless
+              scanning to folders through SMB and FTP protocols, further
+              enhancing user convenience. Additionally, adeptly facilitated
+              printer integration by installing requisite drivers.
             </li>
-            <li>Assisted customers with troubleshooting SMTP issues.</li>
+            <li>
+              Provided dedicated support for resolving SMTP issues, employing a
+              systematic approach to troubleshoot and guide customers towards
+              effective solutions.
+            </li>
           </ul>
           <strong>Technology Service Desk Analyst I</strong>
           <br />
-          QBASE (USCBP Contract) - March 2019 - February 2020
+          QBASE (US CBP Contract) - March 2019 - February 2020
           <br />
           <ul>
             <li>
@@ -117,13 +133,13 @@ export default function Resume() {
         </div>
         <div className="section-title">Education</div>
         <div className="education">
-          <strong>Full-Stack Web Development Certificate</strong>
+          <strong>• Full-Stack Web Development Certificate</strong>
           <br />
           University of Central Florida
           <br />
         </div>
         <div className="education">
-          <strong>Associate of Arts in Computer Science</strong>
+          <strong>• Associate of Arts in Computer Science</strong>
           <br />
           Miami Dade College
           <br />
