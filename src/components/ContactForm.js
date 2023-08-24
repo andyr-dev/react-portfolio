@@ -49,7 +49,9 @@ function Form() {
         form.current,
         apiKey
       )
+      
       .then(
+        console.log( serviceId, templateId, apiKey),
         (result) => {
           console.log(result.text);
         },
