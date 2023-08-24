@@ -14,9 +14,9 @@ function Form() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const form = useRef();
-  const serviceId = process.env.REACT_APP_SERVICE_ID;
-  const templateId = process.env.REACT_APP_TEMPLATE_ID;
-  const apiKey = process.env.REACT_APP_API_KEY;
+  const serviceId = `service_0ju38ha`;
+  const templateId = `template_3235ryf`;
+  const apiKey = `29IGUms4VTl81fwou`;
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -51,13 +51,11 @@ function Form() {
           console.log(error.text);
         }
       );
-      alert(`Thanks ${name}! Your message has been sent!`);
+    alert(`Thanks ${name}! Your message has been sent!`);
     setName("");
     setMessage("");
     setEmail("");
   };
-  console.log( serviceId, templateId, apiKey)
-  console.log( serviceId, templateId, apiKey)
 
   return (
     <section className="contact">
