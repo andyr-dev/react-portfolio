@@ -28,7 +28,7 @@ export default function Resume() {
             Click here for a PDF version
           </button>
         </div>
-        <div className="summary">Summary</div>
+        <div className="section-title">Summary</div>
         <div className="experience">
           Full Stack Web Developer with a background in IT support and life-long
           dedication to learning. Effective at combining creativity and problem
@@ -132,23 +132,23 @@ export default function Resume() {
           </ul>
         </div>
         <div className="section-title">Education</div>
-        <div className="education">
-          <strong>• Full-Stack Web Development Certificate</strong>
+        <div className="experience">
+          <strong>Full-Stack Web Development Certificate</strong>
           <br />
           University of Central Florida
           <br />
         </div>
-        <div className="education">
-          <strong>• Associate of Arts in Computer Science</strong>
+        <div className="experience">
+          <strong>Associate of Arts in Computer Science</strong>
           <br />
           Miami Dade College
           <br />
         </div>
         <div className="section-title">Certifications</div>
-        <div className="certifications">
-          • AWS Cloud Practitioner (May 2020 - May 2024)
+        <div className="experience">
+          AWS Cloud Practitioner (May 2020 - May 2024)
           <br />
-          • AWS Solutions Architect – Associate (May 2020 - May 2024)
+          AWS Solutions Architect – Associate (May 2020 - May 2024)
           <br />
         </div>
       </body>

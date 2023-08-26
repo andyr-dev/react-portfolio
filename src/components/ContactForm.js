@@ -124,16 +124,14 @@ function Form() {
 
         <div className="direct-contact-container">
           <ul className="contact-list">
-            <li className="list-item">
-              <i className="fa-map-marker fa-2x">
-                <FontAwesomeIcon icon={faLocationDot} />
-                <span className="contact-text place">Orlando, FL</span>
-              </i>
+            <li className="d-flex align-items-center contact-text">
+              <FontAwesomeIcon icon={faLocationDot} className="mr-1" />
+              <p className="m-0">---Orlando, FL</p>
             </li>
 
             <li className="list-item">
-              <i className="fa fa-envelope fa-2x">
-                <span className="contact-text email">
+              <i className="fa fa-envelope">
+                <span className="contact-text ">
                   <FontAwesomeIcon icon={faEnvelope} />
                   <a href="mailto: Me@Andyr.dev" title="Send me an email">
                     Me@Andyr.dev

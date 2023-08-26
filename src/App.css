@@ -44,6 +44,24 @@ nav {
   padding: 25px 15px 15px 25px;
 }
 
+.switch {
+  padding: 25px;
+}
+
+.resume {
+  border-style : solid;
+  word-wrap: normal;
+}
+
+.experience, .pdf{
+  margin : 0px 75px 0px 75px;
+}
+
+.section-title {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
 #light a:link {
   text-decoration: none;
 }
@@ -291,10 +309,14 @@ nav {
     padding-right: 0;
     
   }
-  .resume { 
+  /* .resume { 
     font-size: 14px;
+    padding: 15px 15px 15px 15px;
 
-  }
+  } */
+  .experience, .pdf{
+    margin : 0 15px 0 15px;
+}
 }
 
 .switch {
@@ -358,7 +380,7 @@ nav {
   background-color: var(--main-bg-color);
   padding: 25px 25px 25px 25px;
 }
-#dark .education {
+/* #dark .education {
   font-size: 24px;
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
@@ -369,7 +391,7 @@ nav {
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
   padding: 25px 25px 25px 25px;
-}
+} */
 
 #light .header {
   display: flex;
@@ -413,19 +435,16 @@ nav {
   background-color: var(--lightmode-bg-color);
   padding: 25px 25px 25px 25px;
 }
-#light .education {
+/* #light .education {
   font-size: 24px;
   color: var(--lightmode-text-color);
   background-color: var(--lightmode-bg-color);
   padding: 25px 25px 25px 25px;
-}
-#light .certifications {
+} */
+/* #light .certifications {
   font-size: 24px;
   color: var(--lightmode-text-color);
   background-color: var(--lightmode-bg-color);
   padding: 25px 25px 25px 25px;
-}
+} */
 
-.switch {
-  padding: 15px;
-}
